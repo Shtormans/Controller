@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="80dp"
+        android:text="Room address" />
+
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="204.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectionAddress"
+        android:text=""
+        android:layout_marginLeft="148.0dp"
+        android:layout_marginTop="64.5dp" />
+
+    <Button
+        android:text="Test Connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/connectButton"
+        android:layout_marginTop="207.5dp" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="140dp"
+        android:text="Room password" />
+
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="204.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectionPassword"
+        android:text=""
+        android:layout_marginLeft="148.0dp"
+        android:layout_marginTop="124.5dp" />
+
+    <TextView
+        android:text="Connection status"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectionTextView"
+        android:layout_marginTop="318.5dp"
+        android:layout_marginLeft="12.0dp" />
+
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="204.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectionResult"
+        android:layout_marginLeft="148.0dp"
+        android:layout_marginTop="299.0dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation" />
+    
+
+</RelativeLayout>
